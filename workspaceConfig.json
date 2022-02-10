@@ -1,0 +1,280 @@
+{
+  "sources": [
+    {
+      "config": {},
+      "id": "24u1IGb8Vdnn9wMgoweVfN9ZHYH",
+      "name": "go dev",
+      "writeKey": "24u1IBzLs4qz7e6Jfb7VYkvL82Z",
+      "enabled": true,
+      "sourceDefinitionId": "1ZOGGKKNJDJ5K4Or2BnxYVCt5bA",
+      "deleted": false,
+      "createdAt": "Thu Feb 10 2022 11:01:36 GMT+0700 (Indochina Time)",
+      "updatedAt": "Thu Feb 10 2022 11:01:36 GMT+0700 (Indochina Time)",
+      "sourceDefinition": {
+        "id": "1ZOGGKKNJDJ5K4Or2BnxYVCt5bA",
+        "name": "Go",
+        "options": null,
+        "displayName": "Go",
+        "category": null,
+        "createdAt": "2020-03-20T11:10:29.305Z",
+        "updatedAt": "2020-06-18T11:54:02.491Z"
+      },
+      "destinations": [
+        {
+          "id": "24u1WQAYfJ2uhicvVP0hCcdB33D",
+          "name": "anlytics",
+          "enabled": true,
+          "config": {
+            "trackingID": "UA-219865071-1",
+            "useNativeSDK": false,
+            "doubleClick": false,
+            "enhancedLinkAttribution": false,
+            "includeSearch": false,
+            "trackCategorizedPages": true,
+            "trackNamedPages": true,
+            "sampleRate": "100",
+            "siteSpeedSampleRate": "1",
+            "setAllMappedProps": true,
+            "enableServerSideIdentify": false,
+            "serverSideIdentifyEventCategory": "",
+            "serverSideIdentifyEventAction": "",
+            "namedTracker": false,
+            "disableMd5": false,
+            "anonymizeIp": false,
+            "domain": "auto",
+            "enhancedEcommerce": false,
+            "nonInteraction": false,
+            "optimize": "",
+            "sendUserId": false,
+            "useGoogleAmpClientId": false,
+            "resetCustomDimensionsOnPage": [
+              {
+                "resetCustomDimensionsOnPage": ""
+              }
+            ]
+          },
+          "destinationDefinition": {
+            "config": {
+              "destConfig": {
+                "web": [
+                  "useNativeSDK",
+                  "trackCategorizedPages",
+                  "trackNamedPages",
+                  "sampleRate",
+                  "siteSpeedSampleRate",
+                  "resetCustomDimensionsOnPage",
+                  "setAllMappedProps",
+                  "domain",
+                  "optimize",
+                  "useGoogleAmpClientId",
+                  "namedTracker"
+                ],
+                "defaultConfig": [
+                  "trackingID",
+                  "customMappings",
+                  "doubleClick",
+                  "enhancedLinkAttribution",
+                  "includeSearch",
+                  "dimensions",
+                  "metrics",
+                  "contentGroupings",
+                  "enableServerSideIdentify",
+                  "serverSideIdentifyEventCategory",
+                  "serverSideIdentifyEventAction",
+                  "anonymizeIp",
+                  "enhancedEcommerce",
+                  "nonInteraction",
+                  "sendUserId"
+                ]
+              },
+              "secretKeys": [],
+              "excludeKeys": [],
+              "includeKeys": [
+                "trackingID",
+                "doubleClick",
+                "enhancedLinkAttribution",
+                "includeSearch",
+                "trackCategorizedPages",
+                "trackNamedPages",
+                "sampleRate",
+                "siteSpeedSampleRate",
+                "dimensions",
+                "metrics",
+                "resetCustomDimensionsOnPage",
+                "setAllMappedProps",
+                "contentGroupings",
+                "anonymizeIp",
+                "domain",
+                "enhancedEcommerce",
+                "nonInteraction",
+                "optimize",
+                "sendUserId",
+                "useGoogleAmpClientId",
+                "namedTracker"
+              ],
+              "transformAt": "processor",
+              "supportedSourceTypes": [
+                "android",
+                "ios",
+                "web",
+                "unity",
+                "amp",
+                "cloud",
+                "reactnative"
+              ],
+              "saveDestinationResponse": false
+            },
+            "responseRules": null,
+            "id": "1QGzNyNSA4alXixnhDcq4C10ac2",
+            "name": "GA",
+            "displayName": "Google Analytics",
+            "createdAt": "2019-09-02T08:08:04.178Z",
+            "updatedAt": "2020-10-30T09:35:00.899Z"
+          },
+          "rootStore": null,
+          "isProcessorEnabled": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "sourceListStore": {
+      "sources": [
+        {
+          "id": "24u1IGb8Vdnn9wMgoweVfN9ZHYH",
+          "name": "go dev",
+          "writeKey": "24u1IBzLs4qz7e6Jfb7VYkvL82Z",
+          "enabled": true,
+          "config": {},
+          "sourceDefinitionId": "1ZOGGKKNJDJ5K4Or2BnxYVCt5bA"
+        }
+      ],
+      "firstLoad": false
+    },
+    "destinationListStore": {
+      "destinations": [
+        {
+          "id": "24u1WQAYfJ2uhicvVP0hCcdB33D",
+          "name": "anlytics",
+          "enabled": true,
+          "config": {
+            "trackingID": "UA-219865071-1",
+            "useNativeSDK": false,
+            "doubleClick": false,
+            "enhancedLinkAttribution": false,
+            "includeSearch": false,
+            "trackCategorizedPages": true,
+            "trackNamedPages": true,
+            "sampleRate": "100",
+            "siteSpeedSampleRate": "1",
+            "setAllMappedProps": true,
+            "enableServerSideIdentify": false,
+            "serverSideIdentifyEventCategory": "",
+            "serverSideIdentifyEventAction": "",
+            "namedTracker": false,
+            "disableMd5": false,
+            "anonymizeIp": false,
+            "domain": "auto",
+            "enhancedEcommerce": false,
+            "nonInteraction": false,
+            "optimize": "",
+            "sendUserId": false,
+            "useGoogleAmpClientId": false,
+            "resetCustomDimensionsOnPage": [
+              {
+                "resetCustomDimensionsOnPage": ""
+              }
+            ]
+          },
+          "destinationDefinition": {
+            "config": {
+              "destConfig": {
+                "web": [
+                  "useNativeSDK",
+                  "trackCategorizedPages",
+                  "trackNamedPages",
+                  "sampleRate",
+                  "siteSpeedSampleRate",
+                  "resetCustomDimensionsOnPage",
+                  "setAllMappedProps",
+                  "domain",
+                  "optimize",
+                  "useGoogleAmpClientId",
+                  "namedTracker"
+                ],
+                "defaultConfig": [
+                  "trackingID",
+                  "customMappings",
+                  "doubleClick",
+                  "enhancedLinkAttribution",
+                  "includeSearch",
+                  "dimensions",
+                  "metrics",
+                  "contentGroupings",
+                  "enableServerSideIdentify",
+                  "serverSideIdentifyEventCategory",
+                  "serverSideIdentifyEventAction",
+                  "anonymizeIp",
+                  "enhancedEcommerce",
+                  "nonInteraction",
+                  "sendUserId"
+                ]
+              },
+              "secretKeys": [],
+              "excludeKeys": [],
+              "includeKeys": [
+                "trackingID",
+                "doubleClick",
+                "enhancedLinkAttribution",
+                "includeSearch",
+                "trackCategorizedPages",
+                "trackNamedPages",
+                "sampleRate",
+                "siteSpeedSampleRate",
+                "dimensions",
+                "metrics",
+                "resetCustomDimensionsOnPage",
+                "setAllMappedProps",
+                "contentGroupings",
+                "anonymizeIp",
+                "domain",
+                "enhancedEcommerce",
+                "nonInteraction",
+                "optimize",
+                "sendUserId",
+                "useGoogleAmpClientId",
+                "namedTracker"
+              ],
+              "transformAt": "processor",
+              "supportedSourceTypes": [
+                "android",
+                "ios",
+                "web",
+                "unity",
+                "amp",
+                "cloud",
+                "reactnative"
+              ],
+              "saveDestinationResponse": false
+            },
+            "responseRules": null,
+            "id": "1QGzNyNSA4alXixnhDcq4C10ac2",
+            "name": "GA",
+            "displayName": "Google Analytics",
+            "createdAt": "2019-09-02T08:08:04.178Z",
+            "updatedAt": "2020-10-30T09:35:00.899Z"
+          }
+        }
+      ],
+      "firstLoad": false
+    },
+    "connectionsStore": {
+      "connections": {
+        "24u1IGb8Vdnn9wMgoweVfN9ZHYH": [
+          "24u1WQAYfJ2uhicvVP0hCcdB33D"
+        ]
+      }
+    },
+    "version": "1.0.2"
+  }
+}

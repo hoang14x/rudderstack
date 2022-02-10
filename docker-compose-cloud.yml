@@ -1,0 +1,48 @@
+version: "3.7"
+
+services:
+  db-cloud:
+    image: postgres:11-alpine
+    environment:
+      - POSTGRES_USER=rudder
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=jobsdb
+    ports:
+      - "6433:5432"
+
+  backend-cloud:
+    depends_on:
+      - db-cloud
+      - d-transformer-cloud
+    image: rudderlabs/rudder-server:1-alpine
+    entrypoint: sh -c '/wait-for db-cloud:5432 -- /rudder-server'
+    ports:
+      - "8081:8080"
+    environment:
+      - JOBS_DB_HOST=db-cloud
+      - JOBS_DB_USER=rudder
+      - JOBS_DB_PORT=5432
+      - JOBS_DB_DB_NAME=jobsdb
+      - JOBS_DB_PASSWORD=password
+      - DEST_TRANSFORM_URL=http://d-transformer-cloud:9090
+      - CONFIG_BACKEND_URL=https://api.rudderlabs.com
+      - WORKSPACE_TOKEN=24rFTMiDxSkeFaGVHaZq6wwQ6s2
+      #- RSERVER_BACKEND_CONFIG_CONFIG_FROM_FILE=true
+      # - RSERVER_BACKEND_CONFIG_CONFIG_JSONPATH=/etc/rudderstack/workspaceConfig.json # For ex., /etc/rudderstack/workspaceConfig.json
+    # Uncomment the following lines to mount workspaceConfig file
+    #volumes:
+      #- ./workspaceConfig.json:/etc/rudderstack/workspaceConfig.json # Value for <workspace_config_filepath_in_container> should be same as the value provided for RSERVER_BACKEND_CONFIG_CONFIG_JSONPATH
+  d-transformer-cloud:
+    image: rudderlabs/rudder-transformer:latest
+    ports:
+      - "9091:9090"
+  # minio:
+  #   image: minio/minio
+  #   ports:
+  #     - "9000:9000"
+  #   command: server /data
+
+
+
+
+
